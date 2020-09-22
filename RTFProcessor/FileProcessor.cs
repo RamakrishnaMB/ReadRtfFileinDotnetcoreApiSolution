@@ -9,11 +9,11 @@ namespace RTFProcessor
     {
         public string ReadAndReplaceRTFFile()
         {
+
+            //step-1: Read rtf file and assign it to Richtextbox in rtf original format
             string readRtfFile = @"C:/New folder/f_rpt_potential_gap_refund_notice.rtf";
             string readRtfFilebyte = System.IO.File.ReadAllText(readRtfFile);
             RichTextBox readRtBox = new RichTextBox();
-            //step-1: Read rtf file and assign it to Richtextbox in rtf original format
-
             readRtBox.Rtf = readRtfFilebyte;
             //step-2: Create new rich text box, read and replace the rtf content in it.
             RichTextBox replaceRtfrtBox = new RichTextBox();
